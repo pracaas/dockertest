@@ -21,6 +21,7 @@ pipeline {
         sh 'pip3 install pandas'
         sh 'python3 pandafile.py'
         sh 'pip3 install -r requirements.txt'
+        sh 'python3 -m pip install --upgrade pip'
       }
     }
   }
