@@ -10,15 +10,14 @@ pipeline {
       steps{
         echo "Getting app ready"
         sh 'chmod 777 $WORKSPACE/test.py'
-        echo 'python3 --version'
+        sh 'python3 --version'
       }
     }
     stage ("Running Application"){
       steps{
         echo "Running app ..."
         sh 'python3 test.py'
-        echo 'python3 timeteller.py'
-        echo 'python3 --version'
+        sh 'python3 timeteller.py'
       }
     }
   }
