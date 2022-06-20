@@ -18,6 +18,7 @@ pipeline {
         echo "Running app ..."
         sh 'python3 test.py'
         sh 'python3 timeteller.py'
+        sh 'python3 pandafile.py'
       }
     }
   }
