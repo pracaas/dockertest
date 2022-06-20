@@ -10,7 +10,7 @@ pipeline {
       steps{
         echo "Getting app ready"
         sh 'chmod 777 $WORKSPACE/test.py'
-        echo 'python --version'
+        echo 'python3 --version'
       }
     }
   }
