@@ -18,6 +18,7 @@ pipeline {
         echo "Running app ..."
         sh 'python3 test.py'
         sh 'python3 timeteller.py'
+        sh 'python -m venv venv'
         sh 'virtualenv venv --distribute'
         sh '. venv/bin/activate'
         sh 'pip3 install pandas'
