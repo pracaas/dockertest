@@ -20,6 +20,7 @@ pipeline {
         sh 'python3 timeteller.py'
         sh 'pip3 install pandas'
         sh 'python3 pandafile.py'
+        sh 'pip3 install -r requirements.txt'
       }
     }
   }
