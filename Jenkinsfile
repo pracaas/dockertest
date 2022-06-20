@@ -10,7 +10,7 @@ pipeline {
       steps{
         sh "Getting app ready"
         sh 'chmod 777 $WORKSPACE/Batch-Script/homeExpenseScript.sh'
-        echo python --version
+        echo 'python --version'
       }
     }
   }
