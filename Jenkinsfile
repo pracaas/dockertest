@@ -13,5 +13,13 @@ pipeline {
         echo 'python3 --version'
       }
     }
+    stage ("Running Application"){
+      steps{
+        echo "Running app ..."
+        sh 'python3 test.py'
+        echo 'python3 timeteller.py'
+        echo 'python3 --version'
+      }
+    }
   }
 }
