@@ -8,7 +8,7 @@ pipeline {
     }
     stage ("Checking package"){
       steps{
-        sh "Getting app ready"
+        echo "Getting app ready"
         sh 'chmod 777 $WORKSPACE/Batch-Script/homeExpenseScript.sh'
         echo 'python --version'
       }
